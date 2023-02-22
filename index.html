@@ -442,20 +442,83 @@
                     </li>
                 </ul>
             </div>
-        </div>
+
+            <form class="footer-subscribe-form">
+                <label class="footer-subscribe-label" for="email-subscribe">
+                    <h3 class="footer-subscribe-headline">Subscribe</h3>
+                    <input class="footer-email-input" name="email-in" type="email" placeholder="E-mail" id="email-subscribe" required>
+                </label>
+                
+                <button class="subscribe-button" type="submit">
+                    <p class="subscribe-button-text">Subscribe</p>
+                    <svg class="subscribe-icon">
+                        <use href="./images/icons.svg#send-icon"></use>
+                    </svg>
+                </button>
+            </form>
     </footer>
 
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal-window">
-            <div class="modal-window-header">
-                <div class="modal-window-close">
-                    <button class="modal-window-close-button" data-modal-close>
-                        <svg class="modal-window-close-icon">
-                            <use href="./images/icons.svg#modal-window-close-icon"></use>
-                        </svg>
-                    </button>                
-                </div>
+            <button class="modal-window-close-button" data-modal-close>
+                <svg class="modal-window-close-icon">
+                    <use href="./images/icons.svg#modal-window-close-icon"></use>
+                </svg>
+            </button>                
+
+            <div class="modal-window-main">
+                <h2 class="form-headline">Leave your contacts and we will call you back</h2>
+                <form>
+                    <label class="name-label" for="name-input">
+                        <p class="name-text">Name</p>
+                        <div class="name-input-container">
+                            <input class="name-input" name="name-in" type="text" id="name-input" required>
+                            <svg class="name-icon">
+                                <use href="./images/icons.svg#name-icon"></use>
+                            </svg>
+                        </div>
+                    </label>
+
+                    <label class="phone-label" for="phone-input">
+                        <p class="phone-text">Phone</p>
+                        <div class="phone-input-container">
+                            <input class="phone-input" name="phone-in" type="tel" id="phone-input" required>
+                            <svg class="phone-icon">
+                                <use href="./images/icons.svg#phone-icon"></use>
+                            </svg>
+                        </div>
+                    </label>
+
+                    <label class="email-label" for="email-input">
+                        <p class="email-text">Email</p>
+                        <div class="email-input-container">
+                            <input class="email-input" name="email-in" type="email" id="email-input" required>
+                            <svg class="email-icon">
+                                <use href="./images/icons.svg#email-icon"></use>
+                            </svg>
+                        </div>
+                    </label>
+
+                    <label class="comment-label" for="comment-text">
+                        <p class="comment-text">Comment</p>
+                        <textarea class="comment-input" name="comment-in" type="text" placeholder="Text input" id="comment-text"></textarea>
+                    </label>
+                    
+                    <label class="privacy-policy-label" for="checkbox">
+                        <input class="privacy-policy-checkbox visually-hidden" id="checkbox" name="accept" type="checkbox" id="checkbox" required>
+                        <div class="checkbox-icon-container">
+                            <svg class="checkbox-icon">
+                                <use href="./images/icons.svg#checkbox-icon"></use>
+                            </svg>                           
+                        </div>                   
+                        <p class="privacy-policy-text">I accept the terms and conditions of the <a class="privacy-policy-link" href="">Privacy Policy</a></p>
+                    </label>
+
+                    <label class="send-label" for="">
+                        <button class="send-button" type="submit">Send</button>      
+                    </label>
+                </form>
             </div>
         </div>
     </div>
