@@ -48,27 +48,32 @@
         <section class="product-section">
             <div class="container">
                 <h1 class="product-headline visually-hidden">Our Products</h1>
-                <ul class="filter-buttons">
-                    <li>
-                        <button class="filter-button" type="button" onclick="cardFilter('allFilter')">All</button>
-                    </li>
+                <form class="filter-buttons">
+                    <label for="all">
+                        <input class="filter-button-radio" type="radio" name="filter-button" id="all" oninput="cardFilter('allFilter')" checked>
+                        <div class="filter-button">All</div>
+                    </label>
 
-                    <li>
-                        <button class="filter-button" type="button" onclick="cardFilter('websiteFilter')">Web Site</button>
-                    </li>
+                    <label for="website">
+                        <input class="filter-button-radio" type="radio" name="filter-button" id="website" oninput="cardFilter('websiteFilter')">
+                        <div class="filter-button">Web Site</div>
+                    </label for="">
 
-                    <li>
-                        <button class="filter-button" type="button" onclick="cardFilter('appFilter')">App</button>
-                    </li>
+                    <label for="app">
+                        <input class="filter-button-radio" type="radio" name="filter-button" id="app" oninput="cardFilter('appFilter')">
+                        <div class="filter-button">App</div>
+                    </label>
 
-                    <li>
-                        <button class="filter-button" type="button" onclick="cardFilter('designFilter')">Design</button>
-                    </li>
+                    <label for="design">
+                        <input class="filter-button-radio" type="radio" name="filter-button" id="design" oninput="cardFilter('designFilter')">
+                        <div class="filter-button">Design</div>
+                    </label>
 
-                    <li>
-                        <button class="filter-button" type="button" onclick="cardFilter('marketingFilter')">Marketing</button>
-                    </li>
-                </ul>
+                    <label for="marketing">
+                        <input class="filter-button-radio" type="radio" name="filter-button" id="marketing" oninput="cardFilter('marketingFilter')">
+                        <div class="filter-button">Marketing</div>
+                    </label>
+                </form>
 
                 <ul class="product-cards">
                     <li class="product-card">
