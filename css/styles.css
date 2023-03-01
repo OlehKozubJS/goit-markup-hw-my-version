@@ -29,13 +29,13 @@ body {
 ul, .container, .filter-buttons, 
 .footer-subscribe-form {
     flex-wrap: wrap;
-    gap: initial;
 }
 
 .container { 
     max-width: 1158px; 
     margin: 0 auto;
     padding: 0 15px; 
+
 }
 
 a {
@@ -365,7 +365,7 @@ footer .container {
 .advantage-cards,
 .production-cards,
 .customer-cards {
-    justify-content: space-between;
+    justify-content: center;
     gap: 24px;
 }
 
@@ -399,7 +399,7 @@ footer .container {
 } 
 
 .hero-cards {
-    justify-content: space-between;
+    justify-content: center;
     gap: 24px;
 }
 
