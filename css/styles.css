@@ -27,7 +27,7 @@ body {
 }
 
 ul, .container, .filter-buttons, 
-.footer-subscribe-form, body * {
+.footer-subscribe-form {
     flex-wrap: wrap;
     gap: initial;
 }
@@ -878,7 +878,7 @@ label {
     background-color: var(--hover-focus-clr);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-/**/
+
 @media screen and (min-width: 1200px) {
     .header-section-tablet,
     .header-section-phone {
@@ -915,7 +915,7 @@ label {
         justify-content: space-between;
     }
 }
-/**/
+
 .menu-toggle {
     width: 30px;
     height: 20px;
