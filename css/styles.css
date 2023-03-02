@@ -891,9 +891,18 @@ label {
         display: none;
     }
 
+    .header-section-tablet {
+        padding-top: 0;
+    }
+
+    .header-section-tablet .navigation {
+        padding-top: 24px;
+    }
+
     .header-section-tablet .container {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .contact-links {
