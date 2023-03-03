@@ -19,7 +19,7 @@ let productCardWidth = [360, 360, 360, 360, 360, 360, 360, 360, 360];
 
 let cardData = productCardClasses["allFilter"];
 
-setInterval(cardAppearsAndDisappears, 10);
+setInterval(cardAppearsAndDisappears, 1);
 
 function cardFilter(cardType) {
     cardData = productCardClasses[cardType];
@@ -27,8 +27,8 @@ function cardFilter(cardType) {
 
 function cardAppearsAndDisappears() {
     for (let itemIndex = 0; itemIndex < productCards.length; ++itemIndex) {
-        if (cardData[itemIndex] == true  && productCardWidth[itemIndex] < 360) ++productCardWidth[itemIndex];
-        if (cardData[itemIndex] == false && productCardWidth[itemIndex] >   0) --productCardWidth[itemIndex];
+        if (cardData[itemIndex] == true  && productCardWidth[itemIndex] < 360) productCardWidth[itemIndex] = 360;
+        if (cardData[itemIndex] == false && productCardWidth[itemIndex] >   0) productCardWidth[itemIndex] = 0;
 
         productLinks[itemIndex].style = "width: " + productCardWidth[itemIndex] + "px; overflow: hidden;";
         if (productCardWidth[itemIndex] == 0) productCards[itemIndex].className = "product-card none";
