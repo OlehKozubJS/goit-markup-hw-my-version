@@ -962,6 +962,35 @@ label {
     }
 }
 
+@media screen and (max-width: 480px) {   
+    .footer-section .container {
+        justify-content: center;
+    }
+
+    .footer-logo-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .footer-logo-text > a,
+    .footer-social-media-headline,
+    .footer-subscribe-form {
+        margin-inline: auto;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer-subscribe-label > input {
+        width: 398px;
+    }
+
+    .subscribe-button {
+        margin-top: 16px;
+        margin-left: 0;
+    }
+}
+
 /* Common menu settings */
 
 .menu-toggle {
