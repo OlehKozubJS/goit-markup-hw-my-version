@@ -176,13 +176,13 @@ footer .container {
     display: flex;
 }
 
-.footer-logo-text {
-    margin-right: 120px;
-}
-
 .footer-text {
     margin-top: 16px;
     color: var(--accent-and-footer-text-clr);
+}
+
+.footer-social-media {
+    margin-left: 120px;
 }
 
 .footer-social-media-headline,
@@ -364,8 +364,7 @@ footer .container {
 .advantage-cards,
 .production-cards,
 .customer-cards {
-    justify-content: center;
-    gap: 24px;
+    justify-content: space-between;
 }
 
 .advantage-headline {
@@ -398,7 +397,7 @@ footer .container {
 } 
 
 .hero-cards {
-    justify-content: center;
+    justify-content: space-between;
     gap: 24px;
 }
 
@@ -911,6 +910,41 @@ label {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .production-section {
+        display: none;
+    }
+
+    .advantage-cards,
+    .hero-cards,
+    .customer-cards {
+        justify-content: center;
+        column-gap: 24px;
+    }
+
+    .advantage-cards,
+    .customer-cards,
+    .product-cards {
+        row-gap: 72px;
+    }
+
+    .hero-cards {
+        row-gap: 62px;
+    }
+
+    .footer-section .container {
+        justify-content: flex-start;
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+
+    .footer-social-media,
+    .footer-subscribe-form {
+        margin-left: 0;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
     .header-section-tablet,
     .header-section {
@@ -921,6 +955,10 @@ label {
         padding-bottom: 24px;
         display: flex;
         justify-content: space-between;
+    }
+
+    .product-cards {
+        row-gap: 48px;
     }
 }
 
@@ -1011,8 +1049,8 @@ label {
     display: block;
 }
 
-.menu-navigation-links>li:not(:last-child) .menu-navigation-link,
-.menu-contact-links>li:not(:last-child) .menu-contact-link {
+.menu-navigation-links>li:not(:last-child),
+.menu-contact-links>li:not(:last-child) {
     margin-bottom: 40px;
 }
 
