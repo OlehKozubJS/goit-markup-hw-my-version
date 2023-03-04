@@ -27,8 +27,8 @@ function cardFilter(cardType) {
 
 function cardAppearsAndDisappears() {
     for (let itemIndex = 0; itemIndex < productCards.length; ++itemIndex) {
-        if (cardData[itemIndex] == true  && productCardWidth[itemIndex] < 360) productCardWidth[itemIndex] = 360;
-        if (cardData[itemIndex] == false && productCardWidth[itemIndex] >   0) productCardWidth[itemIndex] = 0;
+        if (cardData[itemIndex] == true  && productCardWidth[itemIndex] < 360) ++productCardWidth[itemIndex];
+        if (cardData[itemIndex] == false && productCardWidth[itemIndex] >   0) --productCardWidth[itemIndex];
 
         productLinks[itemIndex].style = "width: " + productCardWidth[itemIndex] + "px; overflow: hidden;";
         if (productCardWidth[itemIndex] == 0) productCards[itemIndex].className = "product-card none";
