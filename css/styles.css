@@ -1001,6 +1001,20 @@ label {
         margin-top: 16px;
         margin-left: 0;
     }
+
+    .advantage-card {
+        width: 100%;
+    }
+
+    
+    .advantage-image {
+        display: none;
+    }
+
+    .advantage-headline {
+        text-align: center;
+        font-size: 36px;
+    }
 }
 
 /* Common menu settings */
