@@ -911,6 +911,10 @@ label {
 }
 
 @media screen and (max-width: 1200px) {
+    .container {
+        max-width: 768px;
+    }
+
     .production-section {
         display: none;
     }
