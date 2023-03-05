@@ -877,6 +877,7 @@ label {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+
 @media screen and (min-width: 1200px) {
     .header-section-tablet,
     .header-section-phone {
@@ -909,8 +910,18 @@ label {
         column-gap: 40px;
     }
 
+    .customer-cards {
+        padding-inline: 50px;
+    }
+
     .product-cards {
         justify-content: space-between;
+    }
+
+    .product-link-content,
+    .product-image,
+    .product-description {
+        width: 348px;
     }
 }
 
@@ -941,6 +952,7 @@ label {
     }
 
     .footer-section .container {
+        max-width: 520px;
         justify-content: flex-start;
         row-gap: 72px;
         column-gap: 24px;
@@ -950,10 +962,13 @@ label {
     .footer-subscribe-form {
         margin-left: 0;
     }
-
 }
 
 @media screen and (max-width: 768px) {
+    .container {
+        max-width: 480px;
+    }
+
     .header-section-tablet,
     .header-section {
         display: none;
@@ -965,17 +980,29 @@ label {
         justify-content: space-between;
     }
 
+    .advantage-card {
+        width: 100%;
+    }
+    
+    .advantage-image {
+        display: none;
+    }
+
+    .advantage-headline {
+        text-align: center;
+        font-size: 36px;
+    }
+
     .product-cards {
         row-gap: 48px;
     }
-}
-
-@media screen and (max-width: 480px) { 
-    .container {
-        max-width: 480px;
-    }
     
+    .product-image {
+        width: 396px;
+    }
+
     .footer-section .container {
+        max-width: 380px;
         justify-content: center;
     }
 
@@ -1000,20 +1027,6 @@ label {
     .subscribe-button {
         margin-top: 16px;
         margin-left: 0;
-    }
-
-    .advantage-card {
-        width: 100%;
-    }
-
-    
-    .advantage-image {
-        display: none;
-    }
-
-    .advantage-headline {
-        text-align: center;
-        font-size: 36px;
     }
 }
 
